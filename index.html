@@ -1,0 +1,246 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Promos LNA 2024–2025</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: one reading column; the timeline breaks wider and scrolls on its own on phones. */
+:root{
+  --bg:#F5F6F8; --surface:#FFFFFF; --fg:#18202E; --muted:#5B6578; --line:#DCE0E8;
+  --bar:#2B3550; --accent:#2E4C8F;
+  --c-pct:#C4553A; --c-vol:#2F7A8F; --c-prod:#A07A16; --c-gift:#7B5BA0; --c-unk:#8C93A3;
+  --band-a:.16;
+  --f-display:"Bricolage Grotesque",ui-sans-serif,system-ui,sans-serif;
+  --f-body:"IBM Plex Sans",ui-sans-serif,system-ui,sans-serif;
+  --f-mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#12161F; --surface:#1A202C; --fg:#E7EAF1; --muted:#9AA3B5; --line:#2C3445;
+  --bar:#B9C3DC; --accent:#8FA8E8;
+  --c-pct:#E57A5E; --c-vol:#5DB3C9; --c-prod:#D4A93C; --c-gift:#A98ACF; --c-unk:#7C8496;
+  --band-a:.22; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#12161F; --surface:#1A202C; --fg:#E7EAF1; --muted:#9AA3B5; --line:#2C3445;
+  --bar:#B9C3DC; --accent:#8FA8E8;
+  --c-pct:#E57A5E; --c-vol:#5DB3C9; --c-prod:#D4A93C; --c-gift:#A98ACF; --c-unk:#7C8496;
+  --band-a:.22; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font:15px/1.55 var(--f-body);padding-inline:20px;padding-block:28px 56px}
+.wrap{max-width:1120px;margin:0 auto;display:grid;gap:44px}
+header{display:grid;gap:8px;max-width:70ch}
+.eyebrow{font:500 12px var(--f-mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+h1{font:700 clamp(28px,4.5vw,42px)/1.1 var(--f-display);margin:0;text-wrap:balance}
+h2{font:700 22px/1.2 var(--f-display);margin:0 0 6px;text-wrap:balance}
+h3{font:600 15px var(--f-body);margin:0}
+p{margin:0}
+.lede{color:var(--muted)}
+section{display:grid;gap:16px;min-width:0}
+.legend{display:flex;flex-wrap:wrap;gap:8px 18px;font-size:13px;color:var(--muted)}
+.legend span{display:inline-flex;align-items:center;gap:7px}
+.sw{width:14px;height:14px;border-radius:3px;display:inline-block}
+.sw.unk{background:repeating-linear-gradient(45deg,var(--c-unk) 0 2px,transparent 2px 5px);border:1px solid var(--c-unk)}
+.chart{background:var(--surface);border:1px solid var(--line);border-radius:10px;overflow-x:auto}
+.chart svg{display:block;min-width:960px;width:100%;height:auto}
+.chart svg text{font-family:var(--f-mono);fill:var(--muted)}
+.tbl{overflow-x:auto;background:var(--surface);border:1px solid var(--line);border-radius:10px}
+table{border-collapse:collapse;width:100%;min-width:720px;font-size:14px}
+th,td{text-align:left;padding:10px 14px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font:500 11.5px var(--f-mono);letter-spacing:.06em;text-transform:uppercase;color:var(--muted);background:transparent}
+tr:last-child td{border-bottom:0}
+td.date{font-family:var(--f-mono);font-size:13px;white-space:nowrap;font-variant-numeric:tabular-nums}
+td.num{font-family:var(--f-mono);text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+th.num{text-align:right}
+.tag{display:inline-block;font:500 11px var(--f-mono);padding:2px 7px;border-radius:99px;border:1px solid currentColor;white-space:nowrap}
+.t-pct{color:var(--c-pct)}.t-vol{color:var(--c-vol)}.t-prod{color:var(--c-prod)}.t-gift{color:var(--c-gift)}.t-unk{color:var(--c-unk);border-style:dashed}
+.todo{color:var(--muted);font-style:italic}
+.idx{font-weight:600}
+.hi{color:var(--c-pct)}
+.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,460px),1fr));gap:28px}
+.two>*{min-width:0}
+.find{display:grid;gap:14px;max-width:75ch;padding-left:0;margin:0;list-style:none}
+.find li{display:grid;gap:3px;padding-left:16px;border-left:2px solid var(--line)}
+.find li strong{font-weight:600}
+.kpis{display:flex;flex-wrap:wrap;gap:12px}
+.kpis>div{flex:1 1 170px;display:grid;gap:2px;padding:14px 16px;background:var(--surface);border:1px solid var(--line);border-radius:10px}
+.kpis>div:first-child{border-color:var(--accent)}
+.kpis .k{font:500 11.5px var(--f-mono);letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.kpis b{font:700 30px/1.1 var(--f-display);font-variant-numeric:tabular-nums}
+.kpis .s{font-size:13px;color:var(--muted)}
+.caveat{max-width:75ch;padding:12px 16px;background:var(--surface);border:1px solid var(--accent);border-radius:8px;font-size:14px}
+.note{font-size:13px;color:var(--muted);max-width:80ch}
+</style>
+
+<div class="wrap">
+<header>
+  <div class="eyebrow">Les Nouveaux Ateliers · Sept → déc.</div>
+  <h1>Opérations promotionnelles 2024–2025 et rendez-vous</h1>
+  <p class="lede">Calendrier des offres de la rentrée à Noël, superposé aux rendez-vous pris chaque jour (prises d'information + RDV conseiller styliste, hors annulations), avec la rentrée 2026 en cours. Le repère du 19 octobre marque la vente exclusive 2026. DUETTO tourne en fond toute l'année, comme les campagnes Meta.</p>
+</header>
+
+<section>
+  <h2>Frise des promos et rendez-vous quotidiens</h2>
+  <div class="legend">
+    <span><i class="sw" style="background:var(--c-pct)"></i>Remise en %</span>
+    <span><i class="sw" style="background:var(--c-vol)"></i>Offre volume (X achetés = 1 offert, 2ᵉ à prix fixe)</span>
+    <span><i class="sw" style="background:var(--c-prod)"></i>Produit complémentaire à prix fixe</span>
+    <span><i class="sw" style="background:var(--c-gift)"></i>Cartes-cadeaux</span>
+      </div>
+  <div class="chart" id="chart" role="img" aria-label="Frise des promotions 2024, 2025 et 2026 avec les rendez-vous quotidiens"></div>
+  <p class="note">Barres = rendez-vous créés ce jour-là (date de prise de RDV, pas date du RDV). Valeurs relevées sur les graphiques Metabase. Bandeau clair = avant-première réservée à la base clients. 2024 hors boutiques Atelier Coqlico, non connectées à Metabase à l'époque.</p>
+</section>
+
+<section>
+  <h2>Ce que montrent les rendez-vous</h2>
+  <ul class="find">
+    <li><strong>Les pics viennent des newsletters.</strong><span>Chaque envoi ou relance promo crée un pic dans les 1 à 2 jours. Les campagnes Meta tournent en fond et soutiennent le niveau de base.</span></li>
+    <li><strong>Le Cyber Monday est le jour le plus fort.</strong><span>59 RDV en 2025, 46 en 2024 : 5 à 7 fois une journée normale, sur une offre à saisir le jour même.</span></li>
+    <li><strong>Le Black Friday double les RDV.</strong><span>Environ ×2 sur la semaine, les deux années.</span></li>
+    <li><strong>Les Tailor Days tiennent le niveau sur la durée.</strong><span>Effet plus faible (×1,2 à ×1,6), mais porté par les relances : 31 RDV le 8/11/2025 et 27 le 15/11/2025.</span></li>
+    <li><strong>Rentrée et cartes-cadeaux font peu bouger les RDV.</strong><span>Proche du niveau de base.</span></li>
+  </ul>
+</section>
+
+<section>
+  <h2>Rentrée 2026, sans promo</h2>
+  <p class="caveat"><b>À lire avant les chiffres :</b> on compte les RDV <b>pris</b> chaque jour, pas les RDV qui ont lieu ce jour-là. Un RDV pris le 12/09 peut se tenir quelques jours ou plusieurs semaines plus tard. Ces chiffres mesurent donc l'effet immédiat d'une promo sur la prise de RDV, à l'instant T, et pas la fréquentation en boutique.<br><b>2024 sous-estimé :</b> en 2024, les boutiques Atelier Coqlico n'étaient pas encore connectées à Metabase. Les chiffres 2024 sont donc forcément inférieurs à la réalité.</p>
+  <div class="kpis">
+    <div><span class="k">Sept. 2026</span><b>321</b><span class="s">RDV pris · aucune promo</span></div>
+    <div><span class="k">Sept. 2025</span><b>330</b><span class="s">RDV pris · rentrée chemises & chinos</span></div>
+    <div><span class="k">Sept. 2024</span><b>217</b><span class="s">RDV pris · chaussures + rentrée chemises · hors Atelier Coqlico</span></div>
+  </div>
+  <p style="max-width:70ch">Sans aucune opération depuis la rentrée (DUETTO en fond, comme les autres années), septembre 2026 compte <b>321 RDV pris, soit 3 % de moins qu'en 2025</b>, qui avait une promo chemises et chinos. Le retard est faible. L'écart avec 2024 (+48 %) est surestimé, car les boutiques Atelier Coqlico n'y sont pas comptées. Le pic du 12/09 (18 RDV) est le seul jour au-dessus de 16.</p>
+</section>
+
+<section>
+  <h2>Indice de performance par opération</h2>
+  <p class="note">Indice = moyenne quotidienne pendant l'opération ÷ moyenne des jours sans aucune promo active la même année (10,8 en 2025, 6,8 en 2024). L'indice compare chaque année à elle-même, il reste donc valable pour 2024 malgré l'absence des boutiques Atelier Coqlico.</p>
+  <div class="tbl"><table>
+    <thead><tr><th>Année</th><th>Opération</th><th class="num">Jours</th><th class="num">RDV</th><th class="num">RDV / jour</th><th class="num">Indice</th></tr></thead>
+    <tbody id="perf"></tbody>
+  </table></div>
+</section>
+
+<div class="two">
+<section>
+  <h2>2025</h2>
+  <div class="tbl"><table>
+    <thead><tr><th>Période</th><th>Opération</th><th>Offre</th><th>Cible</th></tr></thead>
+    <tbody>
+      <tr><td class="date">02/09 → 13/09</td><td>Rentrée chemises & chinos <span class="tag t-vol">volume</span></td><td>3 chemises achetées = 1 offerte<br>-20 % sur les chinos sur mesure</td><td>Toutes boutiques</td></tr>
+      <tr><td class="date">15/10 → 27/11</td><td>Tailor Days <span class="tag t-vol">volume</span></td><td>1 costume acheté = le 2ᵉ à 299 €<br>3 chemises achetées = 1 offerte</td><td>Base existante dès le 15/10, tous dès le 28/10</td></tr>
+      <tr><td class="date">24/11 → 29/11</td><td>Black Friday <span class="tag t-pct">%</span></td><td>-30 % sur tout le vestiaire masculin</td><td>Tous</td></tr>
+      <tr><td class="date">01/12</td><td>Cyber Monday <span class="tag t-pct">%</span></td><td>-30 % avec le code CYBER MONDAY pour tout RDV pris le jour même, valable jusqu'au 31/12</td><td>Tous, sur prise de RDV</td></tr>
+      <tr><td class="date">09/12 → 25/12</td><td>Cartes-cadeaux <span class="tag t-gift">carte</span></td><td>-10 % sur toutes les cartes-cadeaux</td><td>En ligne et en boutique</td></tr>
+    </tbody>
+  </table></div>
+</section>
+<section>
+  <h2>2024</h2>
+  <div class="tbl"><table>
+    <thead><tr><th>Période</th><th>Opération</th><th>Offre</th><th>Cible</th></tr></thead>
+    <tbody>
+      <tr><td class="date">27/08 → 06/09</td><td>Rentrée costumes <span class="tag t-prod">produit</span></td><td>1 costume acheté = chaussures personnalisables à 100 €</td><td></td></tr>
+      <tr><td class="date">10/09 → 03/10</td><td>Rentrée chemises <span class="tag t-vol">volume</span></td><td>3 chemises achetées = 1 offerte</td><td></td></tr>
+      <tr><td class="date">09/10 → 15/10</td><td>Manteaux <span class="tag t-pct">%</span></td><td>-20 % sur tous les manteaux</td><td></td></tr>
+      <tr><td class="date">17/10 → 23/11</td><td>Tailor Days <span class="tag t-vol">volume</span></td><td>1 costume acheté = le 2ᵉ à 299 €<br>3 chemises achetées = 1 offerte</td><td>Base dès le 17/10, tous dès le 28/10</td></tr>
+      <tr><td class="date">25/11 → 29/11</td><td>Black Week <span class="tag t-pct">%</span></td><td>-30 % sur tout le vestiaire masculin</td><td>Tous</td></tr>
+      <tr><td class="date">02/12</td><td>Cyber Monday <span class="tag t-pct">%</span></td><td>-30 % avec le code pour tout RDV pris le jour même</td><td>Tous, sur prise de RDV</td></tr>
+      <tr><td class="date">14/12 → 25/12</td><td>Cartes-cadeaux <span class="tag t-gift">carte</span></td><td>-10 % sur toutes les cartes-cadeaux</td><td></td></tr>
+    </tbody>
+  </table></div>
+</section>
+</div>
+</div>
+
+<script>
+const y25=[9,10,16,10,9,13,8,8,11,9,22,11,15,7,12,18,11,7,11,13,6,10,9,14,11,12,12,5,13,8,9,15,13,10,4,7,10,13,11,5,11,11,12,14,11,16,21,13,9,12,17,14,15,11,16,8,7,9,15,14,12,7,9,16,11,9,9,10,31,9,13,8,15,15,14,27,7,18,17,10,18,15,17,10,14,27,16,28,26,20,11,59,8,12,20,9,11,6,19,13,6,11,9,15,10,10,6,12,8,11,12,11,10,12,12,14,6,8,10,16,12,17];
+const y24=[7,4,6,5,4,11,3,8,6,4,9,8,7,2,9,16,9,9,5,4,4,4,5,10,5,11,5,6,8,9,7,10,9,6,11,8,7,6,9,10,11,2,8,11,13,5,11,5,9,7,13,5,8,8,11,7,4,6,10,7,8,7,13,10,17,12,11,14,19,2,12,11,4,7,12,14,0,5,13,18,22,13,15,4,12,12,14,9,7,13,6,18,16,16,13,20,9,6,46,7,12,5,3,8,8,8,3,5,10,4,14,4,5,10,8,9,7,7,3,10,5,1,10,7,7,4,2,9];
+// Axis: day index from 26 Aug (0) to 31 Dec (127), same calendar days for both years.
+const y26=[10,8,13,5,2,7,13,10,13,11,13,4,12,11,8,14,14,18,12,11,14,5,5,10,6,11,15,9,10,9,14,13,6,9,5,16,8,7];
+const AX0={2024:new Date(2024,7,26),2025:new Date(2025,7,26),2026:new Date(2026,7,26)};
+const idx=(y,m,d)=>Math.round((new Date(y,m-1,d)-AX0[y])/864e5);
+const series={2024:y24.map((v,i)=>[i,v]),2025:y25.map((v,i)=>[i+6,v]),2026:y26.map((v,i)=>[i,v])};
+const P={
+ 2026:[],
+ 2025:[
+  {n:"Rentrée chemises & chinos",a:[9,2],b:[9,13],k:"vol"},
+  {n:"Tailor Days",a:[10,15],pre:[10,28],b:[11,27],k:"vol"},
+  {n:"Black Friday",a:[11,24],b:[11,29],k:"pct",lane:1},
+  {n:"Cyber Monday",a:[12,1],b:[12,1],k:"pct",lane:2},
+  {n:"Cartes-cadeaux",a:[12,9],b:[12,25],k:"gift"}],
+ 2024:[
+  {n:"Costume + chaussures",a:[8,27],b:[9,6],k:"prod",lane:1},
+  {n:"Rentrée chemises",a:[9,10],b:[10,3],k:"vol"},
+  {n:"Manteaux -20 %",a:[10,9],b:[10,15],k:"pct",lane:1},
+  {n:"Tailor Days",a:[10,17],pre:[10,28],b:[11,23],k:"vol"},
+  {n:"Black Week",a:[11,25],b:[11,29],k:"pct",lane:1},
+  {n:"Cyber Monday",a:[12,2],b:[12,2],k:"pct",lane:2},
+  {n:"Cartes-cadeaux",a:[12,14],b:[12,25],k:"gift"}]
+};
+const css=n=>getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+const NS="http://www.w3.org/2000/svg";
+function el(t,a,p){const e=document.createElementNS(NS,t);for(const k in a)e.setAttribute(k,a[k]);p&&p.appendChild(e);return e}
+function draw(){
+  const host=document.getElementById("chart");host.innerHTML="";
+  const W=1100,L=44,R=14,N=128,dx=(W-L-R)/N,laneH=20,chartH=150,blockH=laneH*3+8+chartH+54,H=blockH*3+40;
+  const svg=el("svg",{viewBox:`0 0 ${W} ${H}`},host);
+  const col={pct:css("--c-pct"),vol:css("--c-vol"),prod:css("--c-prod"),gift:css("--c-gift"),unk:css("--c-unk")};
+  const ba=css("--band-a");
+  const defs=el("defs",{},svg);
+  const pat=el("pattern",{id:"hatch",width:6,height:6,patternUnits:"userSpaceOnUse",patternTransform:"rotate(45)"},defs);
+  el("rect",{width:6,height:6,fill:col.unk,"fill-opacity":.18},pat);el("rect",{width:2,height:6,fill:col.unk,"fill-opacity":.7},pat);
+  [2026,2025,2024].forEach((yr,bi)=>{
+    const top=14+bi*blockH, cTop=top+laneH*3+10, base=cTop+chartH, max=60, sy=chartH/max;
+    const g=el("g",{},svg);
+    const t=el("text",{x:L,y:top+2,"font-size":15,"font-weight":600,style:`font-family:var(--f-display);fill:${css("--fg")}`},g);t.textContent=yr;
+    // grid
+    [0,20,40,60].forEach(v=>{const y=base-v*sy;el("line",{x1:L,x2:W-R,y1:y,y2:y,stroke:css("--line"),"stroke-width":1},g);const tt=el("text",{x:L-8,y:y+4,"font-size":10,"text-anchor":"end"},g);tt.textContent=v});
+    // promo bands behind bars + lanes
+    P[yr].forEach(p=>{
+      const a=idx(yr,...p.a),b=idx(yr,...p.b)+1,c=col[p.k];
+      const x=L+a*dx,w=(b-a)*dx,lane=p.lane||0,ly=top+10+lane*laneH;
+      el("rect",{x,y:cTop,width:w,height:chartH,fill:p.k==="unk"?"url(#hatch)":c,"fill-opacity":p.k==="unk"?.5:ba},g);
+      if(p.pre){const pb=idx(yr,...p.pre);
+        el("rect",{x,y:ly,width:(pb-a)*dx,height:laneH-5,rx:3,fill:p.k==="unk"?"url(#hatch)":c,"fill-opacity":.45,stroke:c},g);
+        el("rect",{x:L+pb*dx,y:ly,width:(b-pb)*dx,height:laneH-5,rx:3,fill:p.k==="unk"?"url(#hatch)":c,stroke:c},g);
+      } else el("rect",{x,y:ly,width:Math.max(w,dx),height:laneH-5,rx:3,fill:p.k==="unk"?"url(#hatch)":c,stroke:c},g);
+      const lab=el("text",{x:x+Math.max(w,dx)+4,y:ly+11,"font-size":10.5,style:`fill:${css("--fg")}`},g);
+      lab.textContent=p.n;
+      const tw=lab.getComputedTextLength();
+      const ix0=p.pre?L+idx(yr,...p.pre)*dx:x, iw=x+w-ix0;
+      if(iw>tw+12){lab.setAttribute("x",ix0+6);lab.setAttribute("style",p.k==="unk"?`fill:${css("--fg")};font-weight:500`:"fill:#fff")}
+      else if(x+Math.max(w,dx)+4+tw>W-R){lab.setAttribute("x",x-4);lab.setAttribute("text-anchor","end")}
+    });
+    if(!P[yr].length){const nt=el("text",{x:L+6,y:top+24,"font-size":11},g);nt.textContent="Aucune promo à date (DUETTO en fond) · données jusqu'au 2 oct., journée en cours";}
+    // bars
+    series[yr].forEach(([i,v])=>{
+      const h=v*sy,r=el("rect",{x:L+i*dx+.6,y:base-h,width:dx-1.2,height:h,fill:css("--bar"),rx:1},g);
+      const tl=document.createElementNS(NS,"title");
+      tl.textContent=`${new Date(AX0[yr].getTime()+i*864e5).toLocaleDateString("fr-FR",{day:"numeric",month:"short"})} ${yr} : ${v} RDV`;r.appendChild(tl);
+    });
+    // peak labels
+    series[yr].filter(([i,v])=>v>=(yr===2025?26:18)).forEach(([i,v])=>{const tt=el("text",{x:L+(i+.5)*dx,y:base-v*sy-4,"font-size":10,"text-anchor":"middle",style:`fill:${css("--fg")}`},g);tt.textContent=v});
+    // 19 Oct marker
+    const m=L+(idx(yr,10,19)+.5)*dx;
+    el("line",{x1:m,x2:m,y1:cTop-4,y2:base,stroke:css("--accent"),"stroke-width":1.5,"stroke-dasharray":"4 3"},g);
+    const mt=el("text",{x:m+4,y:cTop+8,"font-size":10,style:`fill:${css("--accent")}`},g);mt.textContent="19/10";
+    // month ticks
+    [[8,26],[9,1],[10,1],[11,1],[12,1]].forEach(([mo,d])=>{const i=idx(yr,mo,d),x=L+i*dx;
+      el("line",{x1:x,x2:x,y1:base,y2:base+5,stroke:css("--muted")},g);
+      const tt=el("text",{x:x+3,y:base+17,"font-size":10.5},g);tt.textContent=new Date(yr,mo-1,d).toLocaleDateString("fr-FR",{day:"numeric",month:"short"});});
+  });
+}
+draw();
+matchMedia("(prefers-color-scheme: dark)").addEventListener("change",draw);
+new MutationObserver(draw).observe(document.documentElement,{attributes:true,attributeFilter:["data-theme"]});
+document.fonts&&document.fonts.ready.then(draw);
+
+// Performance table
+const perf=[
+ [2025,"Rentrée chemises & chinos",12,142],[2025,"Tailor Days, avant-première base",13,170],[2025,"Tailor Days, ouvert à tous",27,365],[2025,"Black Friday",6,131],[2025,"Cyber Monday",1,59],[2025,"Cartes-cadeaux",17,182],
+ [2024,"Rentrée costumes + chaussures",11,68],[2024,"Rentrée chemises",24,183],[2024,"Manteaux -20 %",7,63],[2024,"Tailor Days, avant-première base",11,89],[2024,"Tailor Days, ouvert à tous",27,302],[2024,"Black Week",5,83],[2024,"Cyber Monday",1,46],[2024,"Cartes-cadeaux",12,83]];
+const base={2025:10.8,2024:6.8};
+document.getElementById("perf").innerHTML=perf.map(([y,n,j,r])=>{const pd=r/j,ix=pd/base[y];
+ return `<tr><td class="date">${y}</td><td>${n}</td><td class="num">${j}</td><td class="num">${r}</td><td class="num">${pd.toFixed(1).replace(".",",")}</td><td class="num idx ${ix>=1.8?"hi":""}">×${ix.toFixed(1).replace(".",",")}</td></tr>`}).join("");
+</script>
+
+</body></html>
